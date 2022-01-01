@@ -6,16 +6,13 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:39:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:21:53 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:22:45 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
 # include "ft_ctype.h"
 # include "ft_stdio.h"
 # include "vec.h"
