@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 09:38:50 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/15 10:32:29 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:55:08 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "ft_string.h"
 
 static void	ft_mapi(char *res, char const *s, char (*f)(unsigned int, char),
 		size_t size)

@@ -6,11 +6,9 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 10:46:57 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/17 11:11:52 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:57:05 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

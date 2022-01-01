@@ -6,11 +6,9 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 13:19:28 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/15 13:49:09 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:49:41 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

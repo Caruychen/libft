@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 08:54:23 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/08 11:21:32 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:46:05 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 static void	ft_copy_chunks(unsigned char **dst,
 		const unsigned char **src, size_t n)

@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 10:56:47 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/15 11:02:48 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:50:01 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 char	*ft_strcpy(char *dst, const char *src)
 {

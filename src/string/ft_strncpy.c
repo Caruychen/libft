@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 12:18:34 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/15 13:09:25 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:56:20 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 static size_t	ft_min_size(size_t src_size, size_t len)
 {

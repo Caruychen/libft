@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 11:36:15 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/28 10:37:11 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:44:10 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <string.h>
 
 static void	ft_zero_chunks(void **s, size_t n)
 {

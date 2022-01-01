@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 23:02:07 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/18 12:55:29 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:48:59 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 static char	*ft_traverse_str(char *s1)
 {

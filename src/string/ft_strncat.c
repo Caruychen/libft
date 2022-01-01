@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 12:47:02 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/22 10:04:14 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:55:26 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 char	*ft_strncat(char *s1, const char *s2, size_t n)
 {

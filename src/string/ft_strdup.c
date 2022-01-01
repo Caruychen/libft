@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 15:03:10 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/15 11:07:12 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:50:21 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 char	*ft_strdup(const char *s1)
 {

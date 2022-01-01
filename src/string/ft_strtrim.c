@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 21:35:37 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/19 11:23:53 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:59:10 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 static int	is_whitespace(char c)
 {

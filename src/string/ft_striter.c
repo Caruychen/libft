@@ -6,11 +6,9 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/13 11:44:44 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/13 11:47:12 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:51:04 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

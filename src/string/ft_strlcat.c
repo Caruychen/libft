@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 14:19:52 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/18 16:03:36 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:53:11 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 static size_t	traverse_dst(char **d, size_t dstsize)
 {

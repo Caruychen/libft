@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 15:08:09 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/05 13:54:59 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:44:36 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {

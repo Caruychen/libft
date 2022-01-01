@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 20:52:18 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/22 15:31:02 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:52:13 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "ft_string.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
