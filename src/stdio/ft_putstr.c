@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 11:31:15 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/08 12:13:18 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:18:26 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include "ft_string.h"
 
 void	ft_putstr(char const *s)
 {

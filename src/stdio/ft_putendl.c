@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 15:41:29 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/08 15:53:16 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:10:50 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
+#include "ft_string.h"
 
 void	ft_putendl(char const *s)
 {

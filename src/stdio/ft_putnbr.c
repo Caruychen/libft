@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 22:22:06 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/10 22:53:40 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:16:27 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_stdio.h"
 
 void	ft_putnbr(int n)
 {

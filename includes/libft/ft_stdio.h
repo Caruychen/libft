@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_stdio.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/08 14:32:50 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:18:50 by cchen            ###   ########.fr       */
+/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
+/*   Updated: 2022/01/01 23:15:10 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include "ft_string.h"
+#ifndef FT_STDIO_H
+# define FT_STDIO_H
 
-void	ft_putstr_fd(char const *s, int fd)
-{
-	size_t	length;
+void	ft_putchar(char c);
+void	ft_putstr(char const *s);
+void	ft_putendl(char const *s);
+void	ft_putnbr(int n);
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
-	length = ft_strlen(s);
-	write(fd, s, length);
-}
+#endif
