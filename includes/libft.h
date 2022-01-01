@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:39:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:22:45 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:41:02 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "ft_ctype.h"
 # include "ft_stdio.h"
+# include "ft_stdlib.h"
 # include "vec.h"
 
 //	PART 1
@@ -38,13 +39,8 @@ char	*ft_strstr(const char *haystack, const char *needle);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-int		ft_atoi(const char *str);
 
 // PART 2
-void	*ft_memalloc(size_t size);
-void	ft_memdel(void **ap);
-char	*ft_strnew(size_t size);
-void	ft_strdel(char **as);
 void	ft_strclr(char *s);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
@@ -56,7 +52,6 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
-char	*ft_itoa(int n);
 
 // BONUS
 typedef struct s_list
@@ -73,8 +68,5 @@ void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-void	ft_memdelarray(void ***arr);
-void	ft_strdelarray(char ***arr);
-int		ft_imin(const int n1, const int n2);
 
 #endif
