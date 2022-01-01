@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 15:26:00 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/12 15:26:55 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:32:35 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 void	ft_strdel(char **as)
 {

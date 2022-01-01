@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 11:26:23 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/12 13:05:12 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:31:05 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "ft_string.h"
 
 void	*ft_memalloc(size_t size)
 {

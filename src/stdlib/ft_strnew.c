@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 14:18:03 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/12 15:20:28 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:33:26 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_stdlib.h"
 
 char	*ft_strnew(size_t size)
 {

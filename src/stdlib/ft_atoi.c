@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 14:46:31 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/23 13:40:54 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:27:48 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_ctype.h"
 #define FT_LLONG_MAX 9223372036854775807
 
 static int	parse_sign(const char **str)

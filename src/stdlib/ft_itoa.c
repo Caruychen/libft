@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 15:55:29 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/21 12:51:08 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:30:37 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 static size_t	get_length(int n)
 {

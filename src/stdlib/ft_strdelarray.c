@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 09:18:19 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/24 09:24:12 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:33:01 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
+#include "ft_stdlib.h>
 
 void	ft_strdelarray(char ***arr)
 {

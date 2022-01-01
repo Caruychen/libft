@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 13:20:15 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/12 13:23:56 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:31:41 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 void	ft_memdel(void **ap)
 {
