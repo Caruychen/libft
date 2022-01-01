@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 10:00:24 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/28 10:04:26 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:06:08 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_ctype.h"
 
 int	ft_toupper(int c)
 {

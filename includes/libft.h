@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:39:10 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/21 11:34:55 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/01 23:02:50 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+# include "ft_ctype.h"
 # include "vec.h"
 
 //	PART 1
@@ -40,13 +41,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_atoi(const char *str);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
 
 // PART 2
 void	*ft_memalloc(size_t size);
@@ -89,11 +83,8 @@ void	ft_lstadd(t_list **alst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-int		ft_iswhitespace(char c);
 void	ft_memdelarray(void ***arr);
 void	ft_strdelarray(char ***arr);
-int		ft_isupper(int c);
-int		ft_islower(int c);
 int		ft_imin(const int n1, const int n2);
 
 #endif
