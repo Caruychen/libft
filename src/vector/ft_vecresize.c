@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 11:06:39 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/21 11:36:45 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:19:55 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "vec.h"
+#include "ft_math.h"
 
 int	ft_vecresize(t_vec *src, size_t target_size)
 {

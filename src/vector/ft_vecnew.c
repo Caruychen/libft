@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 12:53:58 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/20 15:17:51 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:19:26 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdlib.h>
 
 int	ft_vecnew(t_vec *dst, size_t init_alloc, size_t elem_size)
 {

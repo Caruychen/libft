@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 15:05:04 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/20 15:10:12 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:18:11 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_stdlib.h"
 
 void	ft_vecfree(t_vec *src)
 {

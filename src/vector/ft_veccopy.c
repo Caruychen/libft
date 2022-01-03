@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/21 10:21:34 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/21 10:30:38 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:17:21 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_string.h"
 
 int	ft_veccopy(t_vec *dst, t_vec *src)
 {
