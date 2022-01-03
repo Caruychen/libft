@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 10:53:01 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/24 11:24:34 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:23:16 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "list.h"
 
 void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
 {

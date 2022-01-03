@@ -6,11 +6,12 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 13:45:48 by cchen             #+#    #+#             */
-/*   Updated: 2021/12/06 19:23:55 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:24:32 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "list.h"
+#include <stdlib.h>
 
 static void	ft_free_link(t_list **link)
 {

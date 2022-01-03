@@ -6,11 +6,13 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 17:30:30 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/24 13:09:26 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:25:21 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "list.h"
+#include "ft_string.h"
+#include <stdlib.h>
 
 static t_list	*fill_list(t_list **list,
 		void const *content, size_t content_size)

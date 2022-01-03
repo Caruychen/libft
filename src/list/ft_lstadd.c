@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 12:52:02 by cchen             #+#    #+#             */
-/*   Updated: 2021/11/24 13:13:27 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/03 12:22:56 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "list.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
