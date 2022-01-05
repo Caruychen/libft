@@ -1,30 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_vecnew.c                                        :+:      :+:    :+:   */
+/*   vec_free.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/20 12:53:58 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/03 12:19:26 by cchen            ###   ########.fr       */
+/*   Created: 2022/01/05 15:37:20 by cchen             #+#    #+#             */
+/*   Updated: 2022/01/05 15:37:26 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "ft_stdlib.h"
 
-int	ft_vecnew(t_vec *dst, size_t init_alloc, size_t elem_size)
+void	vec_free(t_vec *src)
 {
-	if (!dst || init_alloc == 0 || elem_size == 0)
-		return (-1);
-	dst->alloc_size = init_alloc * elem_size;
-	dst->elem_size = elem_size;
-	dst->len = 0;
-	dst->memory = malloc(dst->alloc_size);
-	if (!dst->memory)
-	{
-		dst->alloc_size = 0;
-		dst->elem_size = 0;
-		return (-1);
-	}
-	return (dst->alloc_size);
+	ft_memdel(&src->memory);
+	src->alloc_size = 0;
+	src->elem_size = 0;
+	src->len = 0;
 }

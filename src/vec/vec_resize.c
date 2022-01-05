@@ -1,21 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_vecfree.c                                       :+:      :+:    :+:   */
+/*   vec_resize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/20 15:05:04 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/03 12:18:11 by cchen            ###   ########.fr       */
+/*   Created: 2022/01/05 15:38:35 by cchen             #+#    #+#             */
+/*   Updated: 2022/01/05 15:38:38 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_stdlib.h"
+#include "vec.h"
+#include "ft_math.h"
 
-void	ft_vecfree(t_vec *src)
+int	vec_resize(t_vec *src, size_t target_size)
 {
-	ft_memdel(&src->memory);
-	src->alloc_size = 0;
-	src->elem_size = 0;
-	src->len = 0;
+	t_vec	dst;
+	size_t	target_len;
+
+	if (!src)
+		return (-1);
+	target_len = target_size / src->elem_size;
+	if (vec_new(&dst, target_len, src->elem_size) < 0)
+		return (-1);
+	vec_copy(&dst, src);
+	dst.len = ft_imin(target_len, src->len);
+	vec_free(src);
+	*src = dst;
+	return (target_size);
 }

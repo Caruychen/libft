@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_vecresize.c                                     :+:      :+:    :+:   */
+/*   vec_copy.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/21 11:06:39 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/03 12:19:55 by cchen            ###   ########.fr       */
+/*   Created: 2022/01/05 15:34:49 by cchen             #+#    #+#             */
+/*   Updated: 2022/01/05 15:35:11 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "vec.h"
-#include "ft_math.h"
+#include "ft_string.h"
 
-int	ft_vecresize(t_vec *src, size_t target_size)
+int	vec_copy(t_vec *dst, t_vec *src)
 {
-	t_vec	dst;
-	size_t	target_len;
+	int	cpy_bytes;
 
-	if (!src)
+	if (!dst || !src)
 		return (-1);
-	target_len = target_size / src->elem_size;
-	if (ft_vecnew(&dst, target_len, src->elem_size) < 0)
-		return (-1);
-	ft_veccopy(&dst, src);
-	dst.len = ft_imin(target_len, src->len);
-	ft_vecfree(src);
-	*src = dst;
-	return (target_size);
+	if (dst->alloc_size > src->len * src->elem_size)
+		cpy_bytes = src->len * src->elem_size;
+	else
+		cpy_bytes = dst->alloc_size;
+	ft_memcpy(dst->memory, src->memory, cpy_bytes);
+	return (cpy_bytes);
 }
