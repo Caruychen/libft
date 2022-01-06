@@ -6,12 +6,14 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/01 23:35:07 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:37:42 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:10:24 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_STDLIB_H
 # define FT_STDLIB_H
+
+# include <stdlib.h>
 
 int		ft_atoi(const char *str);
 void	*ft_memalloc(size_t size);

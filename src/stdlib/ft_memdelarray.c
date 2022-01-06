@@ -6,12 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 09:17:13 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:32:06 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:08:44 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "ft_stdio.h"
+#include "ft_stdlib.h"
 
 void	ft_memdelarray(void ***arr)
 {
