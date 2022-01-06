@@ -6,9 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 12:01:06 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:49:14 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:11:55 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {

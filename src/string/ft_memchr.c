@@ -6,9 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 20:20:36 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:44:53 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:11:36 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

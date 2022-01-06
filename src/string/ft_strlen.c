@@ -6,9 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:51:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:53:25 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:13:43 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 size_t	ft_strlen(const char *s)
 {

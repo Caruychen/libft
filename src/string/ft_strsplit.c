@@ -6,11 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 10:55:49 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:57:41 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:14:19 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "ft_stdlib.h"
 #include "ft_string.h"
 
 static size_t	count_words(char const *s, char c)

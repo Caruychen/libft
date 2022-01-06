@@ -6,9 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 13:04:06 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/01 23:57:59 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:14:46 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <string.h>
 
 static int	ft_is_match(const char *hay_piece, const char *needle)
 {
