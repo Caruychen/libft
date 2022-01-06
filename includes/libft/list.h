@@ -6,12 +6,14 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 12:25:58 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/03 12:31:37 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:16:57 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIST_H
 # define LIST_H
+
+# include <string.h>
 
 typedef struct s_list
 {
