@@ -6,16 +6,18 @@
 #    By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/01 15:25:03 by cchen             #+#    #+#              #
-#    Updated: 2022/01/05 16:25:28 by cchen            ###   ########.fr        #
+#    Updated: 2022/01/06 13:40:11 by cchen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME := libft.a
-SRC := src
-INCLUDES := includes/
-OBJ := obj/
-DIRS = ctype math stdio stdlib string list vec
-CTYPE = ft_isalnum \
+CC := gcc
+CFLAGS := -Wall -Werror -Wextra
+INCLUDES := -I./includes -I./includes/libft
+SDIR := src
+ODIR := obj
+VPATH = $(SDIR)
+CTYPE := ft_isalnum \
 		ft_isalpha \
 		ft_isascii \
 		ft_isdigit \
@@ -25,8 +27,8 @@ CTYPE = ft_isalnum \
 		ft_iswhitespace \
 		ft_tolower \
 		ft_toupper
-MATH = ft_imin
-STDIO = ft_putchar \
+MATH := ft_imin
+STDIO := ft_putchar \
 		ft_putchar_fd \
 		ft_putendl \
 		ft_putendl_fd \
@@ -34,7 +36,7 @@ STDIO = ft_putchar \
 		ft_putnbr_fd \
 		ft_putstr \
 		ft_putstr_fd
-STDLIB = ft_atoi \
+STDLIB := ft_atoi \
 		 ft_itoa \
 		 ft_memalloc \
 		 ft_memdel \
@@ -42,7 +44,7 @@ STDLIB = ft_atoi \
 		 ft_strdel \
 		 ft_strdelarray \
 		 ft_strnew
-STRING = ft_bzero \
+STRING := ft_bzero \
 		 ft_memccpy \
 		 ft_memchr \
 		 ft_memcmp \
@@ -73,35 +75,37 @@ STRING = ft_bzero \
 		 ft_strstr \
 		 ft_strsub \
 		 ft_strtrim
-LIST = ft_lstadd \
+LIST := ft_lstadd \
 	   ft_lstdel \
 	   ft_lstdelone \
 	   ft_lstiter \
 	   ft_lstmap \
 	   ft_lstnew
-VEC = vec_copy \
+VEC := vec_copy \
 	  vec_free \
 	  vec_from \
 	  vec_new \
 	  vec_resize
-SRCS = $(patsubst %, $(SRC)/ctype/%.c, $(CTYPE)) \
-	   $(patsubst %, $(SRC)/math/%.c, $(MATH)) \
-	   $(patsubst %, $(SRC)/stdio/%.c, $(STDIO)) \
-	   $(patsubst %, $(SRC)/stdlib/%.c, $(STDLIB)) \
-	   $(patsubst %, $(SRC)/string/%.c, $(STRING)) \
-	   $(patsubst %, $(SRC)/list/%.c, $(LIST)) \
-	   $(patsubst %, $(SRC)/vec/%.c, $(VEC))
-
-OBJECTS = $(patsubst %, $(OBJ)%.o, $(CTYPE) $(MATH) $(STDIO) $(STDLIB) $(STRING) $(LIST) $(VEC))
+SRCS = $(patsubst %, $(SDIR)/ctype/%.c, $(CTYPE)) \
+	   $(patsubst %, $(SDIR)/math/%.c, $(MATH)) \
+	   $(patsubst %, $(SDIR)/stdio/%.c, $(STDIO)) \
+	   $(patsubst %, $(SDIR)/stdlib/%.c, $(STDLIB)) \
+	   $(patsubst %, $(SDIR)/string/%.c, $(STRING)) \
+	   $(patsubst %, $(SDIR)/list/%.c, $(LIST)) \
+	   $(patsubst %, $(SDIR)/vec/%.c, $(VEC))
+OBJS = $(SRCS:$(SDIR)/%.c=$(ODIR)/%.o)
 
 all: $(NAME)
 
-$(NAME):
-	gcc -Wall -Wextra -Werror -c $(SRCS) -I./includes -I./includes/libft
-	ar -rcs $(NAME) $(OBJECTS)
+$(ODIR)/%.o: %.c
+	@mkdir -p $(@D)
+	$(CC) $(CFLAGS) -c $<  $(INCLUDES) -o $@
+
+$(NAME): $(OBJS)
+	ar -rcs $(NAME) $^
 
 clean:
-	@rm -f $(OBJECTS)
+	@rm -f $(OBJS)
 
 fclean: clean
 	@rm -f $(NAME)
