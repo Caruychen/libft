@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/01 13:39:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/03 12:26:37 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 14:24:23 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include "ft_stdio.h"
 # include "ft_stdlib.h"
 # include "ft_string.h"
+# include "list.h"
 # include "vec.h"
 
 // BONUS
