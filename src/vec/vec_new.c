@@ -6,10 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:38:17 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/05 15:38:19 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:18:00 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "vec.h"
 #include <stdlib.h>
 
 int	vec_new(t_vec *dst, size_t init_alloc, size_t elem_size)

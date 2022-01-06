@@ -6,10 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:37:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/05 15:37:26 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:17:51 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "vec.h"
 #include "ft_stdlib.h"
 
 void	vec_free(t_vec *src)

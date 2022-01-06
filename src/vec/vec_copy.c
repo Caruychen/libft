@@ -6,10 +6,11 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 15:34:49 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/05 15:35:11 by cchen            ###   ########.fr       */
+/*   Updated: 2022/01/06 11:17:37 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "vec.h"
 #include "ft_string.h"
 
 int	vec_copy(t_vec *dst, t_vec *src)
