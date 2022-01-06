@@ -6,7 +6,7 @@
 #    By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/01 15:25:03 by cchen             #+#    #+#              #
-#    Updated: 2022/01/06 13:40:11 by cchen            ###   ########.fr        #
+#    Updated: 2022/01/06 14:45:17 by cchen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,8 @@ STDIO := ft_putchar \
 		ft_putnbr \
 		ft_putnbr_fd \
 		ft_putstr \
-		ft_putstr_fd
+		ft_putstr_fd \
+		get_next_line
 STDLIB := ft_atoi \
 		 ft_itoa \
 		 ft_memalloc \
