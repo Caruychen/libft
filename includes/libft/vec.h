@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/20 11:01:19 by cchen             #+#    #+#             */
-/*   Updated: 2022/01/05 15:39:32 by cchen            ###   ########.fr       */
+/*   Updated: 2022/02/17 13:43:58 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,7 @@ void	vec_free(t_vec *src);
 int		vec_from(t_vec *dst, void *src, size_t len, size_t elem_size);
 int		vec_copy(t_vec *dst, t_vec *src);
 int		vec_resize(t_vec *src, size_t target_size);
+int		vec_append_str(t_vec *dst, const void *src);
+int		vec_append_strn(t_vec *dst, const void *src, size_t n);
 
 #endif
