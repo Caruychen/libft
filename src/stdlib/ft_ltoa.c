@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:11:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/02/18 10:23:21 by cchen            ###   ########.fr       */
+/*   Updated: 2022/02/18 10:51:16 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,8 +47,8 @@ char	*ft_ltoa(intmax_t value, int base)
 	if (sign == -1 && base == 10)
 		tmp[index--] = '-';
 	if (index == MAX_LL_STR_SIZE - 2)
-		tmp[index] = '0';
-	res = (char *)malloc(MAX_LL_STR_SIZE - index);
+		tmp[index--] = '0';
+	res = (char *)malloc(MAX_LL_STR_SIZE - index + 1);
 	if (!res)
 		return (NULL);
 	return (ft_memcpy(res, &tmp[index + 1], MAX_LL_STR_SIZE - index + 1));

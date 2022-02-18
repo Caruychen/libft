@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/01 23:35:07 by cchen             #+#    #+#             */
-/*   Updated: 2022/02/18 10:22:53 by cchen            ###   ########.fr       */
+/*   Updated: 2022/02/18 10:48:30 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define FT_STDLIB_H
 
 # include <stdlib.h>
-# define HEX_CONV_STR "0123456789abcde"
+# define HEX_CONV_STR "0123456789abcdef"
 # define MAX_LL_STR_SIZE 33
 
 int		ft_atoi(const char *str);
