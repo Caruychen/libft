@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:11:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/02/18 10:51:16 by cchen            ###   ########.fr       */
+/*   Updated: 2022/02/18 11:19:10 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_ltoa(intmax_t value, int base)
 	tmp[index--] = '\0';
 	while (value > 0)
 	{
-		tmp[index--] = HEX_CONV_STR[value % base];
+		tmp[index--] = HEX_STR_L[value % base];
 		value /= base;
 	}
 	if (sign == -1 && base == 10)
