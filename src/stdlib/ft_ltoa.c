@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/17 17:11:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/02/28 11:21:15 by cchen            ###   ########.fr       */
+/*   Updated: 2022/02/28 11:29:18 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_ltoa(intmax_t value, int base)
 	if (base < 2 || base > 16)
 		return (NULL);
 	sign = 1 - ((value < 0) * 2);
-	index = _internal_ultoa(value, tmp, base);
+	index = _internal_ultoa(sign * value, tmp, base);
 	if (sign == -1 && base == 10)
 		tmp[index--] = '-';
 	res = (char *)malloc(MAX_LL_STR_SIZE - index + 1);
