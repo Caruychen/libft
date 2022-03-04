@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_math.h                                          :+:      :+:    :+:   */
+/*   ft_pow.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:40:35 by cchen             #+#    #+#             */
-/*   Updated: 2022/03/04 15:30:46 by cchen            ###   ########.fr       */
+/*   Created: 2022/03/04 15:30:20 by cchen             #+#    #+#             */
+/*   Updated: 2022/03/04 15:30:31 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_MATH_H
-# define FT_MATH_H
-
-# include <stdint.h>
-
-typedef union s_dcast
+long long	ft_pow(long long x, long long y)
 {
-	double		d;
-	uint64_t	u;
-}			t_dcast;
+	long long	res;
 
-int			ft_imin(const int n1, const int n2);
-int			ft_sqrt(int nb);
-double		ft_fmod(double x, double y);
-long long	ft_pow(long long x, long long y);
-
-#endif
+	res = 1;
+	while (y > 0)
+	{
+		if (y & 1)
+			res *= x;
+		x *= x;
+		y >>= 1;
+	}
+	return (res);
+}
