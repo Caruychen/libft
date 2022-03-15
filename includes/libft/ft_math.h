@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/01 23:40:35 by cchen             #+#    #+#             */
-/*   Updated: 2022/03/08 10:26:52 by cchen            ###   ########.fr       */
+/*   Updated: 2022/03/15 15:41:22 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int			ft_imin(const int n1, const int n2);
 int			ft_imax(const int n1, const int n2);
 int			ft_sqrt(int nb);
 double		ft_fmod(double x, double y);
+long double	ft_ldmod(long double x, long double y);
 long long	ft_pow(long long x, long long y);
 
 #endif
