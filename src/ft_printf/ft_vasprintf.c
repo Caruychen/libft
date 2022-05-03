@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdio.h                                         :+:      :+:    :+:   */
+/*   ft_vasprintf.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:52 by cchen            ###   ########.fr       */
+/*   Created: 2022/02/16 13:39:23 by cchen             #+#    #+#             */
+/*   Updated: 2022/02/28 13:21:52 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STDIO_H
-# define FT_STDIO_H
-# include "ft_printf.h"
+#include "ft_printf.h"
+#include "libft.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int	ft_vasprintf(char **ret, const char *format, va_list ap)
+{
+	t_vec	result;
+	t_specs	specs;
 
-#endif
+	if (vec_new(&result, 1, sizeof(char)) < 0)
+		return (-1);
+	init_specs(&specs, ap);
+	if (parse(&result, format, specs) < 0)
+		return (-1);
+	*ret = result.memory;
+	va_end(specs.ap);
+	return (result.len - 1);
+}

@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdio.h                                         :+:      :+:    :+:   */
+/*   parse_width.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:52 by cchen            ###   ########.fr       */
+/*   Created: 2022/03/08 10:07:09 by cchen             #+#    #+#             */
+/*   Updated: 2022/03/14 16:04:55 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STDIO_H
-# define FT_STDIO_H
-# include "ft_printf.h"
+#include "libft.h"
+#include "ft_printf.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+void	parse_width(const char **format, t_specs *specs)
+{
+	int	arg;
 
-#endif
+	arg = read_option(format, specs);
+	if (arg < 0)
+	{
+		specs->flags |= DASH;
+		specs->flags &= ~(ZERO);
+		specs->pad_char = ' ';
+		arg *= -1;
+	}
+	specs->width = (unsigned int) arg;
+}

@@ -6,7 +6,7 @@
 #    By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/01 15:25:03 by cchen             #+#    #+#              #
-#    Updated: 2022/01/11 10:57:30 by cchen            ###   ########.fr        #
+#    Updated: 2022/05/03 10:35:31 by cchen            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME := libft.a
 
 CC := gcc
 CFLAGS := -Wall -Werror -Wextra
-INCLUDES := -I./includes -I./includes/libft
+INCLUDES := -I./includes -I./includes/libft -I./includes/libft/ft_printf
 
 SRC_DIR := src
 OBJ_DIR := obj

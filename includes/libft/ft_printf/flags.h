@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdio.h                                         :+:      :+:    :+:   */
+/*   flags.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:52 by cchen            ###   ########.fr       */
+/*   Created: 2022/03/07 16:32:57 by cchen             #+#    #+#             */
+/*   Updated: 2022/03/14 16:33:22 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STDIO_H
-# define FT_STDIO_H
-# include "ft_printf.h"
+#ifndef FLAGS_H
+# define FLAGS_H
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+# define FLAGLIST "#0- +"
+
+typedef enum e_flags
+{
+	HASH = 1,
+	ZERO = 2,
+	DASH = 4,
+	SPACE = 8,
+	PLUS = 16,
+}	t_flags;
+
+char	*mod_flags(t_specs specs, size_t src_len);
 
 #endif

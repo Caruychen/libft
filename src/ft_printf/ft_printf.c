@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdio.h                                         :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:52 by cchen            ###   ########.fr       */
+/*   Created: 2022/02/15 18:03:29 by cchen             #+#    #+#             */
+/*   Updated: 2022/03/14 15:55:56 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STDIO_H
-# define FT_STDIO_H
-# include "ft_printf.h"
+#include "ft_printf.h"
+#include <unistd.h>
+#include <stdlib.h>
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+int	ft_printf(const char *format, ...)
+{
+	va_list	ap;
+	char	*ret;
+	int		len;
 
-#endif
+	va_start(ap, format);
+	len = ft_vasprintf(&ret, format, ap);
+	va_end(ap);
+	if (len == -1)
+		return (len);
+	write(1, ret, len);
+	free(ret);
+	return (len);
+}

@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stdio.h                                         :+:      :+:    :+:   */
+/*   rounding.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/01 23:13:20 by cchen             #+#    #+#             */
-/*   Updated: 2022/05/03 10:28:52 by cchen            ###   ########.fr       */
+/*   Created: 2022/03/15 16:14:48 by cchen             #+#    #+#             */
+/*   Updated: 2022/03/16 07:50:11 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_STDIO_H
-# define FT_STDIO_H
-# include "ft_printf.h"
+#include "libft.h"
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *s);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-void	ft_putchar_fd(char c, int fd);
-void	ft_putstr_fd(char const *s, int fd);
-void	ft_putendl_fd(char const *s, int fd);
-void	ft_putnbr_fd(int n, int fd);
+long double	rounding(long double value, unsigned int precision)
+{
+	int				is_odd;
+	long double		pow;
 
-#endif
+	pow = (long double) ft_pow(10, precision);
+	is_odd = (int) ft_fmod(value * pow, 2) % 2;
+	if (!precision && !is_odd && ft_fmod(value * pow, 1) - 0.5 == 0.0)
+		return (value);
+	return (value + 0.5 / pow);
+}
