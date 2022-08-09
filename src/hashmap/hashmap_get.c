@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   hashmap_get.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/01 13:39:10 by cchen             #+#    #+#             */
-/*   Updated: 2022/08/09 13:13:25 by cchen            ###   ########.fr       */
+/*   Created: 2022/07/19 14:28:38 by cchen             #+#    #+#             */
+/*   Updated: 2022/07/22 16:47:19 by cchen            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+/*
+ * Returns a pointer to value corresponding to the key
+ *
+ * If the corresponding key is not found, returns NULL
+ */
 
-# include "ft_ctype.h"
-# include "ft_math.h"
-# include "ft_stdio.h"
-# include "ft_stdlib.h"
-# include "ft_string.h"
-# include "get_next_line.h"
-# include "list.h"
-# include "vec.h"
-# include "hashmap.h"
+#include "hashmap.h"
 
-#endif
+int	*hashmap_get(t_hashmap *src, const char *key)
+{
+	t_entry	*entry;
+
+	entry = hashmap_entry(src, key);
+	if (!entry)
+		return (NULL);
+	return (&(entry->value));
+}
