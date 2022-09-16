@@ -48,5 +48,6 @@ char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 size_t	ft_count_char(const char *str, char c);
 size_t	ft_strspn(const char *s, const char *charset);
+char	*ft_strpbrk(const char *s, const char *charset);
 
 #endif
