@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 17:22:33 by cchen             #+#    #+#             */
-/*   Updated: 2022/09/16 23:36:45 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/18 08:54:50 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strtok(char *str, const char *delim)
 		return (last = NULL, NULL);
 	token = str;
 	str = ft_strpbrk(token, delim);
-	if (!str)
+	if (str)
 		*str++ = '\0';
 	last = str;
 	return (token);
