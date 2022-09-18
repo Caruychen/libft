@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 12:12:38 by cchen             #+#    #+#             */
-/*   Updated: 2022/09/16 23:36:28 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/18 08:46:22 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,5 +50,6 @@ size_t	ft_count_char(const char *str, char c);
 size_t	ft_strspn(const char *s, const char *charset);
 char	*ft_strpbrk(const char *s, const char *charset);
 char	*ft_strtok(char *str, const char *delim);
+char	*ft_strtok_r(char *str, const char *delim, char **lasts);
 
 #endif
