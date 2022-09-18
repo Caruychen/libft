@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 12:12:38 by cchen             #+#    #+#             */
-/*   Updated: 2022/08/26 15:15:06 by cchen            ###   ########.fr       */
+/*   Updated: 2022/09/18 08:46:22 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,9 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
 size_t	ft_count_char(const char *str, char c);
+size_t	ft_strspn(const char *s, const char *charset);
+char	*ft_strpbrk(const char *s, const char *charset);
+char	*ft_strtok(char *str, const char *delim);
+char	*ft_strtok_r(char *str, const char *delim, char **lasts);
 
 #endif
