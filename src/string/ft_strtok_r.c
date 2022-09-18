@@ -6,7 +6,7 @@
 /*   By: caruychen <cchen@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/18 08:45:32 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/18 09:08:04 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/18 09:33:50 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strtok_r(char *str, const char *delim, char **lasts)
 	token = str;
 	str = ft_strpbrk(token, delim);
 	if (str)
-		*str++ = '\0'
+		*str++ = '\0';
 	*lasts = str;
 	return (token);
 }
