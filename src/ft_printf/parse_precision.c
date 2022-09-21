@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "ft_printf.h"
 
-void	parse_precision(const char **format, t_specs *specs)
+void	_parse_precision(const char **format, t_specs *specs)
 {
 	int	arg;
 

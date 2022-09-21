@@ -14,7 +14,7 @@
 #include "dispatch.h"
 #include "flags.h"
 
-void	parse_flags(const char **format, t_specs *specs)
+void	_parse_flags(const char **format, t_specs *specs)
 {
 	while (ft_strchr(FLAGLIST, **format))
 	{

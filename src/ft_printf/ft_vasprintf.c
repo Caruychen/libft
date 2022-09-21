@@ -21,7 +21,7 @@ int	ft_vasprintf(char **ret, const char *format, va_list ap)
 	if (vec_new(&result, 1, sizeof(char)) < 0)
 		return (-1);
 	init_specs(&specs, ap);
-	if (parse(&result, format, specs) < 0)
+	if (_parse(&result, format, specs) < 0)
 		return (-1);
 	*ret = result.memory;
 	va_end(specs.ap);

@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-int	parse(t_vec *result, const char *format, t_specs specs)
+int	_parse(t_vec *result, const char *format, t_specs specs)
 {
 	const char	*p;
 
@@ -27,11 +27,11 @@ int	parse(t_vec *result, const char *format, t_specs specs)
 			if (vec_append_strn(result, format, (p - 1) - format) < 0)
 				return (-1);
 			reset_specs(&specs);
-			parse_flags(&p, &specs);
-			parse_width(&p, &specs);
-			parse_precision(&p, &specs);
-			parse_length(&p, &specs);
-			if (parse_conversion(result, &p, &specs) < 0)
+			_parse_flags(&p, &specs);
+			_parse_width(&p, &specs);
+			_parse_precision(&p, &specs);
+			_parse_length(&p, &specs);
+			if (_parse_conversion(result, &p, &specs) < 0)
 				return (-1);
 			format = p;
 		}
