@@ -22,7 +22,7 @@ static int	dispatch_index(const char spec)
 	return (0);
 }
 
-int	parse_conversion(t_vec *result, const char **format, t_specs *specs)
+int	_parse_conversion(t_vec *result, const char **format, t_specs *specs)
 {
 	t_dispatcher	dispatch;
 

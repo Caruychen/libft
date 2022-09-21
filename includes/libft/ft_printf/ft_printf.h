@@ -22,13 +22,13 @@
 
 int			ft_printf(const char *format, ...);
 int			ft_vasprintf(char **ret, const char *format, va_list ap);
-int			parse(t_vec *result, const char *format, t_specs specs);
-int			parse_conversion(t_vec *result, const char **format,
+int			_parse(t_vec *result, const char *format, t_specs specs);
+int			_parse_conversion(t_vec *result, const char **format,
 				t_specs *specs);
-void		parse_length(const char **format, t_specs *specs);
-void		parse_precision(const char **format, t_specs *specs);
-void		parse_flags(const char **format, t_specs *specs);
-void		parse_width(const char **format, t_specs *specs);
+void		_parse_length(const char **format, t_specs *specs);
+void		_parse_precision(const char **format, t_specs *specs);
+void		_parse_flags(const char **format, t_specs *specs);
+void		_parse_width(const char **format, t_specs *specs);
 void		init_specs(t_specs *specs, va_list ap);
 void		reset_specs(t_specs *specs);
 int			get_int_base(const char c);

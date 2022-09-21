@@ -13,7 +13,7 @@
 #include "dispatch.h"
 #include "modifiers.h"
 
-void	parse_length(const char **format, t_specs *specs)
+void	_parse_length(const char **format, t_specs *specs)
 {
 	int	index;
 
