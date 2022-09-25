@@ -6,13 +6,13 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 14:29:16 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 14:32:09 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 15:38:51 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Strings.h"
 
-int	string_from(t_string *dst, char *src)
+int	string_from(t_string *dst, const char *src)
 {
 	size_t	len;
 
