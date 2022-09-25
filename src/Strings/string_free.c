@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 14:12:54 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 14:19:14 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 14:33:43 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	string_free(t_string *src)
 {
-	ft_memdel(&src->memory);
+	ft_memdel((void **)&src->memory);
 	src->capacity = 0;
-	src->len = 0;
+	src->length = 0;
 }
