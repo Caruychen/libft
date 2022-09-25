@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   string_resize.c                                    :+:      :+:    :+:   */
+/*   string_pop.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/25 14:45:13 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 15:16:04 by caruychen        ###   ########.fr       */
+/*   Created: 2022/09/25 15:15:16 by caruychen         #+#    #+#             */
+/*   Updated: 2022/09/25 15:23:10 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Strings.h"
-#include "ft_math.h"
 
-int	string_resize(t_string *src, size_t target_len)
+char	string_pop(t_string *str)
 {
-	t_string	dst;
+	char	c;
 
-	if (!src)
-		return (-1);
-	if (string_new(&dst, target_len) < 0)
-		return (-1);
-	string_copy(&dst, src);
-	dst.length = ft_ulmin(target_len, src->length);
-	string_free(src);
-	*src = dst;
-	return (1);
+	if (!str || !str->memory || !str->length)
+		return (0);
+	c = str->memory[--str->length];
+	str->memory[str->length] = 0;
+	return (c);
 }

@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 13:27:30 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 14:09:58 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 15:27:26 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define STRINGS_H
 
 # include "ft_string.h"
-# define STRING_RESIZE_FACTOR 2
+# define STR_RESIZE_FACTOR 2
 
 typedef struct s_string
 {
@@ -29,7 +29,7 @@ int		string_from(t_string *dst, char *src);
 int		string_from_n(t_string *dst, char *src, size_t len);
 int		string_copy(t_string *dst, t_string *src);
 int		string_resize(t_string *src, size_t target_size);
-int		string_push(t_string *dst, void *src);
+int		string_push(t_string *dst, char c);
 char		string_pop(t_string *str);
 
 #endif
