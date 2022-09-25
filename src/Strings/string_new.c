@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 14:02:47 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 14:11:13 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 15:06:14 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ int	string_new(t_string *dst, size_t capacity)
 	dst->memory = (char *) ft_memalloc(dst->capacity);
 	if (!dst->memory)
 		return (dst->capacity = 0, -1);
-	return (dst->capacity);
+	return (1);
 }

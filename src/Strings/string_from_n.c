@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 14:21:24 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 14:32:18 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 15:06:07 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,5 +21,5 @@ int	string_from_n(t_string *dst, char *src, size_t len)
 		return (-1);
 	dst->length = len;
 	dst->memory = ft_memcpy(dst->memory, src, len);
-	return (dst->length);
+	return (1);
 }
