@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 13:27:30 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 16:23:58 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 17:28:23 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ t_string	*string_resize(t_string *src, size_t target_size);
 t_string	*string_push(t_string *dst, char c);
 char		string_pop(t_string *str);
 t_string	*string_concat(t_string *dst, const char *src);
+t_string	*string_append(t_string *dst, t_string *src);
+t_string	*string_clear(t_string *str);
 
 #endif
