@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 13:27:30 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 16:18:47 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/09/25 16:23:58 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct s_string
 }		t_string;
 
 t_string	*string_new(t_string *dst, size_t capacity);
-void	string_free(t_string *src);
+void		string_free(t_string *src);
 t_string	*string_from(t_string *dst, const char *src);
 t_string	*string_from_n(t_string *dst, const char *src, size_t len);
 t_string	*string_copy(t_string *dst, t_string *src);
