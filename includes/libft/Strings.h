@@ -34,5 +34,6 @@ char		string_pop(t_string *str);
 t_string	*string_concat(t_string *dst, const char *src);
 t_string	*string_append(t_string *dst, t_string *src);
 t_string	*string_clear(t_string *str);
+char		*string_at(t_string *str, size_t index);
 
 #endif
