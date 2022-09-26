@@ -36,5 +36,7 @@ t_string	*string_concat_n(t_string *dst, const char *src, size_t len);
 t_string	*string_append(t_string *dst, t_string *src);
 t_string	*string_clear(t_string *str);
 char		*string_at(t_string *str, size_t index);
+t_string	*string_replace(t_string *dst, const char *src);
+t_string	*string_replace_n(t_string *dst, const char *src, size_t len);
 
 #endif
