@@ -12,7 +12,7 @@
 
 #include "ft_ctype.h"
 
-int	ft_isnumber(char *str)
+int	ft_isnumber(const char *str)
 {
 	if (!*str)
 		return (0);
