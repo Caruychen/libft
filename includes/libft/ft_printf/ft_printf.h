@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/15 18:03:47 by cchen             #+#    #+#             */
-/*   Updated: 2022/03/16 08:59:09 by cchen            ###   ########.fr       */
+/*   Updated: 2022/09/28 16:35:04 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # define FALSE 0
 
 int			ft_printf(const char *format, ...);
+int			ft_dprintf(int fildes, const char *format, ...);
 int			ft_vasprintf(char **ret, const char *format, va_list ap);
 int			_parse(t_vec *result, const char *format, t_specs specs);
 int			_parse_conversion(t_vec *result, const char **format,
