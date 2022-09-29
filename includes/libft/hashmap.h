@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 11:18:35 by cchen             #+#    #+#             */
-/*   Updated: 2022/08/26 15:20:07 by cchen            ###   ########.fr       */
+/*   Updated: 2022/09/29 17:51:22 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ typedef struct s_entry
 	int		value;
 }	t_entry;
 
-t_entry			hashmap_create_entry(char *key, int value);
+t_entry			hashmap_create_entry(const char *key, int value);
 int				hashmap_free_entry(t_entry *entry);
 
 typedef struct s_hashmap
@@ -48,9 +48,9 @@ int				hashmap_new(t_hashmap *dst);
 int				hashmap_new_with_capacity(t_hashmap *dst, size_t capacity);
 t_entry			*hashmap_entry(t_hashmap *src, const char *key);
 int				*hashmap_get(t_hashmap *src, const char *key);
-t_entry			*hashmap_insert(t_hashmap *dst, char	*key, int value);
-t_entry			*hashmap_try_insert(t_hashmap *dst, char *key, int value);
-int				hashmap_remove(t_hashmap *dst, char *key);
+t_entry			*hashmap_insert(t_hashmap *dst, const char	*key, int value);
+t_entry			*hashmap_try_insert(t_hashmap *dst, const char *key, int value);
+int				hashmap_remove(t_hashmap *dst, const char *key);
 void			hashmap_free(t_hashmap *src);
 
 #endif

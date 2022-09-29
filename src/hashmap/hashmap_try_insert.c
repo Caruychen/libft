@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 11:26:01 by cchen             #+#    #+#             */
-/*   Updated: 2022/08/26 15:19:14 by cchen            ###   ########.fr       */
+/*   Updated: 2022/09/29 17:49:20 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 #include "ft_string.h"
 #include "hashmap.h"
 
-static int	_guards(t_hashmap *dst, char *key)
+static int	_guards(t_hashmap *dst, const char *key)
 {
 	if (!dst || !key)
 		return (HASH_ERR);
@@ -34,12 +34,12 @@ static int	_guards(t_hashmap *dst, char *key)
 	return (HASH_OK);
 }
 
-static t_entry	*get_slot(t_hashmap *dst, char *key)
+static t_entry	*get_slot(t_hashmap *dst, const char *key)
 {
 	return (&(dst->entries[hashmap_find_slot(dst, key)]));
 }
 
-t_entry	*hashmap_try_insert(t_hashmap *dst, char *key, int value)
+t_entry	*hashmap_try_insert(t_hashmap *dst, const char *key, int value)
 {
 	t_entry	*entry;
 
