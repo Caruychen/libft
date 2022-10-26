@@ -6,7 +6,7 @@
 /*   By: caruychen <marvin@42.fr>                   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 17:16:31 by caruychen         #+#    #+#             */
-/*   Updated: 2022/09/25 17:27:47 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/10/26 10:53:41 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ t_string	*string_append(t_string *dst, t_string *src)
 			return (NULL);
 	}
 	ft_memcpy((dst->memory + dst->length), src->memory, src->length);
+	dst->length += src->length;
 	return (dst);
 }
