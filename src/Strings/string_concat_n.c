@@ -6,7 +6,7 @@
 /*   By: cchen <cchen@student.hive.fi>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/26 15:49:26 by cchen             #+#    #+#             */
-/*   Updated: 2022/09/28 17:13:58 by caruychen        ###   ########.fr       */
+/*   Updated: 2022/10/26 10:40:50 by caruychen        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@ t_string	*string_concat_n(t_string *dst, const char *src, size_t len)
 			return (NULL);
 	}
 	ft_memcpy((dst->memory + dst->length), src, len);
-	dst->length = new_len;
+	dst->length += len;
 	return (dst);
 }
